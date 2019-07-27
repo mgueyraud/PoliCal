@@ -1,0 +1,82 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Horarios
+        </ion-title>
+    </ion-toolbar>
+
+    <ion-segment scrollable mode='md' color='light' (ionChange)="cambioDia($event) ">
+        <ion-segment-button mode='md' *ngFor="let dia of dias" [value]='dia'>
+            <ion-label text-capitalize>{{dia}}</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+</ion-header>
+
+<ion-content>
+
+
+    <ion-list mode='md'>
+
+        <!-- Comienzo de Materia -->
+        <ion-item mode='ios' lines="none">
+            <ion-label mode='ios' slot='start'>
+                <div slot='start' class="rdg-expertise-bar rdg-brief-bg text-right" style="float: left;"></div>
+                <h3 style="margin-left:15px;">Algoritmos</h3>
+                <p style="margin-left:15px;">Clase: A51</p>
+            </ion-label>
+            <ion-label mode='ios' style="overflow:visible !important;" slot='end' text-right>17:30 - 18:30
+            </ion-label>
+        </ion-item>
+        <!-- Fin de Materia -->
+
+        <ion-item mode='ios' lines="none">
+            <ion-label mode='ios' slot='start'>
+                <div slot='start' class="rdg-expertise-bar rdg-success-bg text-right" style="float: left;"></div>
+                <h3 style="margin-left:15px;">Arquitectura</h3>
+                <p style="margin-left:15px;">Clase: A52</p>
+            </ion-label>
+            <ion-label mode='ios' style="overflow:visible !important;" slot='end' text-right>17:30 - 18:30</ion-label>
+        </ion-item>
+
+        <ion-item mode='ios' lines="none">
+            <ion-label mode='ios' slot='start'>
+                <div slot='start' class="rdg-expertise-bar rdg-insights-bg text-right" style="float: left;"></div>
+                <h3 style="margin-left:15px;">Arquitectura</h3>
+                <p style="margin-left:15px;">Clase: C11</p>
+            </ion-label>
+            <ion-label mode='ios' style="overflow:visible !important;" slot='end' text-right>17:30 - 18:30</ion-label>
+        </ion-item>
+
+    </ion-list>
+
+
+
+
+
+
+    <ion-fab vertical='bottom' horizontal='end' slot='fixed'>
+        <ion-fab-button>
+            <ion-icon name='add'></ion-icon>
+        </ion-fab-button>
+
+        <ion-fab-list side="top">
+            <ion-fab-button>
+                <ion-icon name="help"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+                <ion-icon name="hammer"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+                <ion-icon name="build"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+
+    <!-- <input type="file" (change)="onFileChange($event)" multiple="false" /> -->
+</ion-content>
+<ion-footer>
+
+</ion-footer>

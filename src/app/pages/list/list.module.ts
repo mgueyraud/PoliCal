@@ -5,9 +5,11 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
 import { ListPage } from './list.page';
+import { CalendarModule } from 'ion2-calendar';
 
 @NgModule({
   imports: [
+    CalendarModule,
     CommonModule,
     FormsModule,
     IonicModule,
