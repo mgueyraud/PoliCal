@@ -4,8 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 
-import { ListPage } from './list.page';
+import { CalendarioPage } from './calendario.page';
 import { CalendarModule } from 'ion2-calendar';
+import { ComponentsModule } from '../../components/components.module';
+
 
 @NgModule({
   imports: [
@@ -13,13 +15,14 @@ import { CalendarModule } from 'ion2-calendar';
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     RouterModule.forChild([
       {
         path: '',
-        component: ListPage
+        component: CalendarioPage
       }
     ])
   ],
-  declarations: [ListPage]
+  declarations: [CalendarioPage]
 })
-export class ListPageModule {}
+export class CalendarioPageModule {}

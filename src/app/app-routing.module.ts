@@ -12,9 +12,10 @@ const routes: Routes = [
     loadChildren: './pages/home/home.module#HomePageModule'
   },
   {
-    path: 'list',
-    loadChildren: './pages/list/list.module#ListPageModule'
+    path: 'calendario',
+    loadChildren: './pages/calendario/calendario.module#CalendarioPageModule'
   }
+
 ];
 
 @NgModule({

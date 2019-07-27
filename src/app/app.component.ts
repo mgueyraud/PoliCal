@@ -17,7 +17,7 @@ export class AppComponent {
     },
     {
       title: 'Calendario',
-      url: '/list',
+      url: '/calendario',
       icon: 'calendar'
     }
   ];

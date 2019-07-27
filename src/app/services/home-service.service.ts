@@ -32,6 +32,9 @@ export class HomeServiceService {
       case '6':
         diaActual = 'Sabado';
         break;
+      default:
+        diaActual = 'Lunes';
+        break;
     }
 
     return diaActual;
