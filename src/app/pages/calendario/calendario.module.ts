@@ -6,7 +6,6 @@ import { RouterModule } from '@angular/router';
 
 import { CalendarioPage } from './calendario.page';
 import { CalendarModule } from 'ion2-calendar';
-import { ComponentsModule } from '../../components/components.module';
 
 
 @NgModule({
@@ -15,7 +14,6 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    ComponentsModule,
     RouterModule.forChild([
       {
         path: '',

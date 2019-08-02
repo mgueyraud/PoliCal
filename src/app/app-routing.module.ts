@@ -14,7 +14,10 @@ const routes: Routes = [
   {
     path: 'calendario',
     loadChildren: './pages/calendario/calendario.module#CalendarioPageModule'
-  }
+  },  { path: 'agregar-evento', loadChildren: './pages/agregar-evento/agregar-evento.module#AgregarEventoPageModule' }
+
+
+
 
 ];
 

@@ -12,12 +12,12 @@
 <ion-content>
 
 
-    
+    <ion-calendar [(ngModel)]="dia" [type]='type' [options]="options" [format]="'YYYY-MM-DD'">
+    </ion-calendar>
 
-   <app-m-calendar></app-m-calendar>
 
     <ion-fab vertical='bottom' horizontal='end' slot='fixed'>
-        <ion-fab-button (click)="multiple()">
+        <ion-fab-button (click)="agregarEvento()">
             <ion-icon name='add'></ion-icon>
         </ion-fab-button>
     </ion-fab>
