@@ -1,7 +1,8 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { FileUploadService } from '../../services/file-upload.service';
-import { IonSegment } from '@ionic/angular';
+import { IonSegment, ModalController } from '@ionic/angular';
 import { HomeServiceService } from '../../services/home-service.service';
+import { AgregarHorarioPage } from '../agregar-horario/agregar-horario.page';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,8 @@ export class HomePage implements OnInit {
 
 
   constructor(private fileUpload: FileUploadService,
-              private homeService: HomeServiceService) {}
+              private homeService: HomeServiceService,
+              private modalCtrl: ModalController) {}
 
   // onFileChange(event){
   //   this.fileUpload.onFileChange(event);
@@ -31,6 +33,17 @@ export class HomePage implements OnInit {
 
   cambioDia( event ) {
 
+  }
+
+  async armarHorario() { 
+    const modal = await this.modalCtrl.create({
+      component: AgregarHorarioPage,
+      cssClass: 'my-custom-modal-css'
+    });
+    await modal.present();
+
+    const { data } = await modal.onWillDismiss();
+    console.log(data);
   }
 
   

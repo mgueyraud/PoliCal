@@ -13,6 +13,8 @@ import { Calendar } from '@ionic-native/calendar/ngx';
 import { CalendarModule } from 'ion2-calendar';
 import { AgregarEventoPage } from './pages/agregar-evento/agregar-evento.page';
 import { AgregarEventoPageModule } from './pages/agregar-evento/agregar-evento.module';
+import { AgregarHorarioPage } from './pages/agregar-horario/agregar-horario.page';
+import { AgregarHorarioPageModule } from './pages/agregar-horario/agregar-horario.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,10 +23,12 @@ import { AgregarEventoPageModule } from './pages/agregar-evento/agregar-evento.m
     IonicModule.forRoot(),
     AppRoutingModule,
     CalendarModule,
-    AgregarEventoPageModule
+    AgregarEventoPageModule,
+    AgregarHorarioPageModule
   ],
   entryComponents: [
-    AgregarEventoPage
+    AgregarEventoPage,
+    AgregarHorarioPage
   ],
   providers: [
     StatusBar,

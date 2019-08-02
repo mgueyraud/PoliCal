@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'calendario',
     loadChildren: './pages/calendario/calendario.module#CalendarioPageModule'
-  },  { path: 'agregar-evento', loadChildren: './pages/agregar-evento/agregar-evento.module#AgregarEventoPageModule' }
+  },  { path: 'agregar-evento', loadChildren: './pages/agregar-evento/agregar-evento.module#AgregarEventoPageModule' },
+  { path: 'secciones', loadChildren: './pages/secciones/secciones.module#SeccionesPageModule' },
+  { path: 'calculadora', loadChildren: './pages/calculadora/calculadora.module#CalculadoraPageModule' },
+  { path: 'informacion', loadChildren: './pages/informacion/informacion.module#InformacionPageModule' },
+  { path: 'agregar-horario', loadChildren: './pages/agregar-horario/agregar-horario.module#AgregarHorarioPageModule' }
 
 
 

@@ -19,6 +19,21 @@ export class AppComponent {
       title: 'Calendario',
       url: '/calendario',
       icon: 'calendar'
+    },
+    {
+      title: 'Secciones',
+      url: '/secciones',
+      icon: 'list'
+    },
+    {
+      title: 'Calculadora',
+      url: '/calculadora',
+      icon: 'calculator'
+    },
+    {
+      title: 'Sobre',
+      url: '/informacion',
+      icon: 'information-circle-outline'
     }
   ];
 
