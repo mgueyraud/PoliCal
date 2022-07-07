@@ -31,7 +31,7 @@
     "cordova-plugin-file": "^6.0.2",
     "core-js": "^2.5.4",
     "ion2-calendar": "^3.0.0-rc.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "xlsx": "^0.14.4",
